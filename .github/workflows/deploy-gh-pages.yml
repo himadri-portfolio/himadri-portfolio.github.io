@@ -37,7 +37,11 @@ jobs:
 
       - name: Build
         run: npm run build
-
+        
+      - name: Create 404 fallback for SPA
+        run: |
+          cp -v ./dist/index.html ./dist/404.html
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
