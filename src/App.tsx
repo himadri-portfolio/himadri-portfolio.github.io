@@ -110,6 +110,39 @@ const CONTENT = {
       ctaTalk: "Let's Talk",
       ctaWork: "View Work"
     },
+    deepDiveBhasha: {
+      title: "Engineering Excellence: Bhasha Mitra",
+      desc: "Developing a Bengali writing assistant required solving unique linguistic challenges that generic AI models often miss.",
+      points: [
+        { title: "Unicode Normalization", desc: "Custom logic to handle ZWJ/ZWNJ characters and য/য় variants, ensuring consistent text processing across all Word versions." },
+        { title: "Anchor-Based Replacement", desc: "A robust replacement engine that prevents positional drift during multi-pass AI corrections within MS Word documents." },
+        { title: "Register Detection", desc: "Advanced Sadhu-Cholito mixing detection to maintain stylistic consistency in formal and informal Bengali writing." }
+      ],
+      stackTitle: "Tech Stack / Architecture",
+      activeDev: "Active Development"
+    },
+    deepDiveTask: {
+      title: "Robust Offline-First Architecture",
+      desc: "Built for the specific connectivity challenges of institutions, this task manager ensures zero data loss through a sophisticated hybrid sync engine.",
+      points: [
+        { title: "Conflict-Safe Cloud Merge", desc: "An action-aware \"dirty task map\" tracks pending changes per task ID, ensuring local edits always win during cloud pulls." },
+        { title: "Incremental UPSERT Logic", desc: "Uses SQLite WAL mode and true UPSERT logic to handle database updates efficiently without blocking the UI thread." },
+        { title: "Thread-Safe Background Ops", desc: "Background cloud sync runs on Qt's thread pool with RLock protection, keeping the user interface fluid and responsive." }
+      ],
+      systemArch: "System Architecture"
+    },
+    aboutSection: {
+      title: "Beyond the Screen.",
+      desc1: "I believe that technology should be as harmonious as music. When I'm not optimizing Bengali grammar algorithms or repairing hardware, you'll find me immersed in melodies.",
+      desc2: "As a singer and musician, I bring a unique rhythmic perspective to my development work—focusing on flow, structure, and the human experience behind every interface.",
+      musician: "Musician",
+      problemSolver: "Problem Solver",
+      quote: "Code is logic, Music is soul."
+    },
+    contactSection: {
+      title: "Let's build something meaningful.",
+      desc: "Available for software collaborations, hardware consultancy, or just a chat about tech and music."
+    },
     nav: ['projects', 'services', 'experience', 'skills', 'about', 'contact']
   },
   bn: {
@@ -193,6 +226,39 @@ const CONTENT = {
       desc: "মঠবাড়িয়ায় <span class='font-medium underline underline-offset-4'>মাল্টিপ্লাস কম্পিউটার</span> পরিচালনার পাশাপাশি আমি ভাষাতত্ত্ব এবং প্রাতিষ্ঠানিক কাজের জন্য বিশেষায়িত সফটওয়্যার তৈরি করি।",
       ctaTalk: "যোগাযোগ করুন",
       ctaWork: "প্রজেক্ট দেখুন"
+    },
+    deepDiveBhasha: {
+      title: "ইঞ্জিনিয়ারিং এক্সেলেন্স: ভাষা মিত্র",
+      desc: "একটি বাংলা রাইটিং অ্যাসিস্ট্যান্ট তৈরির জন্য বিশেষ ভাষাতাত্ত্বিক চ্যালেঞ্জগুলো সমাধান করা প্রয়োজন ছিল যা সাধারণ এআই মডেলগুলো অনেক সময় মিস করে যায়।",
+      points: [
+        { title: "ইউনিকোড নরমালাইজেশন", desc: "ZWJ/ZWNJ অক্ষর এবং য/য় রূপগুলো হ্যান্ডেল করার জন্য কাস্টম লজিক, যা ওয়ার্ডের সব ভার্সনে টেক্সট প্রসেসিংয়ের ধারাবাহিকতা নিশ্চিত করে।" },
+        { title: "অ্যাঙ্কর-ভিত্তিক রিপ্লেসমেন্ট", desc: "একটি শক্তিশালী রিপ্লেসমেন্ট ইঞ্জিন যা এমএস ওয়ার্ড ডকুমেন্টে মাল্টি-পাস এআই কারেকশনের সময় পজিশনাল ড্রিফট প্রতিরোধ করে।" },
+        { title: "রেজিস্টার ডিটেকশন", desc: "ফরমাল এবং ইনফরমাল বাংলা লেখায় শৈলীগত সামঞ্জস্য বজায় রাখার জন্য উন্নত সাধু-চলিত মিশ্রণ শনাক্তকরণ পদ্ধতি।" }
+      ],
+      stackTitle: "টেক স্ট্যাক / আর্কিটেকচার",
+      activeDev: "চলমান উন্নয়ন"
+    },
+    deepDiveTask: {
+      title: "রোবস্ট অফলাইন-ফার্স্ট আর্কিটেকচার",
+      desc: "প্রতিষ্ঠানের নির্দিষ্ট কানেক্টিভিটি চ্যালেঞ্জের জন্য তৈরি এই টাস্ক ম্যানেজার একটি উন্নত হাইব্রিড সিঙ্ক ইঞ্জিনের মাধ্যমে জিরো ডেটা লস নিশ্চিত করে।",
+      points: [
+        { title: "কনফ্লিক্ট-সেফ ক্লাউড মার্জ", desc: "একটি অ্যাকশন-অ্যাওয়ার 'ডার্টি টাস্ক ম্যাপ' প্রতিটি টাস্ক আইডির জন্য পেন্ডিং পরিবর্তনগুলো ট্র্যাক করে, যা ক্লাউড পুলের সময় লোকাল এডিটকে অগ্রাধিকার দেয়।" },
+        { title: "ইনক্রিমেন্টাল UPSERT লজিক", desc: "ইউআই থ্রেডকে ব্লক না করে ডেটাবেস আপডেট দক্ষতার সাথে পরিচালনা করতে SQLite WAL মোড এবং ট্রু UPSERT লজিক ব্যবহার করে।" },
+        { title: "থ্রেড-সেফ ব্যাকগ্রাউন্ড অপস", desc: "ইউজার ইন্টারফেসকে সচল রাখতে ব্যাকগ্রাউন্ড ক্লাউড সিঙ্ক RLock প্রোটেকশন সহ Qt-এর থ্রেড পুলে চলে।" }
+      ],
+      systemArch: "সিস্টেম আর্কিটেকচার"
+    },
+    aboutSection: {
+      title: "স্ক্রিনের সীমানা পেরিয়ে।",
+      desc1: "আমি বিশ্বাস করি যে প্রযুক্তি সঙ্গীতের মতোই সুরেলা হওয়া উচিত। আমি যখন বাংলা ব্যাকরণ অ্যালগরিদম অপ্টিমাইজ করি না বা হার্ডওয়্যার মেরামত করি না, তখন আমাকে সুরের মায়ায় মগ্ন পাবেন।",
+      desc2: "একজন গায়ক এবং সঙ্গীতশিল্পী হিসেবে, আমি আমার ডেভেলপমেন্ট কাজে একটি অনন্য ছন্দময় দৃষ্টিভঙ্গি নিয়ে আসি — যেখানে প্রতিটি ইন্টারফেসের পেছনের ফ্লো, স্ট্রাকচার এবং মানবিক অভিজ্ঞতার ওপর গুরুত্ব দেওয়া হয়।",
+      musician: "সঙ্গীতশিল্পী",
+      problemSolver: "প্রবলেম সলভার",
+      quote: "কোড হলো লজিক, সঙ্গীত হলো প্রাণ।"
+    },
+    contactSection: {
+      title: "চলুন অর্থবহ কিছু গড়ি।",
+      desc: "সফটওয়্যার কোলাবরেশন, হার্ডওয়্যার কনসালটেন্সি বা টেক এবং মিউজিক নিয়ে আড্ডার জন্য আমি আছি।"
     },
     nav: ['projects', 'services', 'experience', 'skills', 'about', 'contact']
   }
@@ -422,29 +488,23 @@ export default function App() {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-3xl font-bold tracking-tight mb-6">Engineering Excellence: Bhasha Mitra</h2>
+                <h2 className="text-3xl font-bold tracking-tight mb-6">{t.deepDiveBhasha.title}</h2>
                 <div className={`space-y-6 leading-relaxed transition-colors ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
                   <p>
-                    Developing a Bengali writing assistant required solving unique linguistic challenges that generic AI models often miss. 
+                    {t.deepDiveBhasha.desc}
                   </p>
                   <div className="grid grid-cols-1 gap-4">
-                    <div className={`p-4 rounded-2xl border transition-colors ${isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-100'}`}>
-                      <h4 className={`font-bold mb-1 text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Unicode Normalization</h4>
-                      <p className="text-xs">Custom logic to handle ZWJ/ZWNJ characters and য/য় variants, ensuring consistent text processing across all Word versions.</p>
-                    </div>
-                    <div className={`p-4 rounded-2xl border transition-colors ${isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-100'}`}>
-                      <h4 className={`font-bold mb-1 text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Anchor-Based Replacement</h4>
-                      <p className="text-xs">A robust replacement engine that prevents positional drift during multi-pass AI corrections within MS Word documents.</p>
-                    </div>
-                    <div className={`p-4 rounded-2xl border transition-colors ${isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-100'}`}>
-                      <h4 className={`font-bold mb-1 text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Register Detection</h4>
-                      <p className="text-xs">Advanced Sadhu-Cholito mixing detection to maintain stylistic consistency in formal and informal Bengali writing.</p>
-                    </div>
+                    {t.deepDiveBhasha.points.map((point, pIdx) => (
+                      <div key={pIdx} className={`p-4 rounded-2xl border transition-colors ${isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-100'}`}>
+                        <h4 className={`font-bold mb-1 text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>{point.title}</h4>
+                        <p className="text-xs">{point.desc}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
               <div className={`order-1 md:order-2 rounded-3xl p-8 aspect-video flex flex-col justify-center transition-colors ${isDark ? 'bg-zinc-900 text-zinc-50' : 'bg-zinc-900 text-white'}`}>
-                <div className="font-mono text-[10px] opacity-50 mb-4 uppercase tracking-widest">Tech Stack / Architecture</div>
+                <div className="font-mono text-[10px] opacity-50 mb-4 uppercase tracking-widest">{t.deepDiveBhasha.stackTitle}</div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <div className="text-zinc-500 text-[10px] uppercase mb-1">Frontend</div>
@@ -466,7 +526,7 @@ export default function App() {
                 <div className="mt-8 pt-8 border-t border-white/10">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="text-xs font-medium">Active Development: v3.5.0.0</span>
+                    <span className="text-xs font-medium">{t.deepDiveBhasha.activeDev}: v3.5.0.0</span>
                   </div>
                 </div>
               </div>
@@ -479,58 +539,46 @@ export default function App() {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className={`rounded-3xl p-8 flex flex-col justify-center border transition-colors ${isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-zinc-100 border-zinc-200'}`}>
-                <div className="font-mono text-[10px] text-zinc-400 mb-6 uppercase tracking-widest">System Architecture</div>
+                <div className="font-mono text-[10px] text-zinc-400 mb-6 uppercase tracking-widest">{t.deepDiveTask.systemArch}</div>
                 <div className="space-y-4">
-                  <div className={`p-4 rounded-xl border text-center font-bold text-sm transition-colors ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-50' : 'bg-white border-zinc-200 text-zinc-900'}`}>Windows Desktop App (PySide6)</div>
+                  <div className={`p-4 rounded-xl border text-center font-bold text-sm transition-colors ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-50' : 'bg-white border-zinc-200 text-zinc-900'}`}>{lang === 'bn' ? 'উইন্ডোজ ডেস্কটপ অ্যাপ' : 'Windows Desktop App'} (PySide6)</div>
                   <div className="flex justify-center">
                     <div className="w-px h-6 bg-zinc-300" />
                   </div>
-                  <div className={`p-4 rounded-xl text-center font-bold text-sm transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>SyncService (Thread-Safe)</div>
+                  <div className={`p-4 rounded-xl text-center font-bold text-sm transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>{lang === 'bn' ? 'সিঙ্কসার্ভিস' : 'SyncService'} ({lang === 'bn' ? 'থ্রেড-সেফ' : 'Thread-Safe'})</div>
                   <div className="flex justify-between px-8">
                     <div className="w-px h-6 bg-zinc-300" />
                     <div className="w-px h-6 bg-zinc-300" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`p-3 rounded-xl border text-center text-xs font-medium transition-colors ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-50' : 'bg-white border-zinc-200 text-zinc-900'}`}>SQLite (Local)</div>
+                    <div className={`p-3 rounded-xl border text-center text-xs font-medium transition-colors ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-50' : 'bg-white border-zinc-200 text-zinc-900'}`}>SQLite ({lang === 'bn' ? 'লোকাল' : 'Local'})</div>
                     <div className={`p-3 rounded-xl border text-center text-xs font-medium transition-colors ${isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-50' : 'bg-white border-zinc-200 text-zinc-900'}`}>Google Apps Script</div>
                   </div>
                   <div className="flex justify-end px-12">
                     <div className="w-px h-6 bg-zinc-300" />
                   </div>
                   <div className="flex justify-end">
-                    <div className={`w-1/2 p-3 rounded-xl border text-center text-xs font-medium transition-colors ${isDark ? 'bg-zinc-950 text-zinc-950 border-zinc-800' : 'bg-zinc-50 border-zinc-200 text-zinc-900'}`}>Google Sheets (Cloud)</div>
+                    <div className={`w-1/2 p-3 rounded-xl border text-center text-xs font-medium transition-colors ${isDark ? 'bg-zinc-950 text-zinc-950 border-zinc-800' : 'bg-zinc-50 border-zinc-200 text-zinc-900'}`}>Google Sheets ({lang === 'bn' ? 'ক্লাউড' : 'Cloud'})</div>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold tracking-tight mb-6">Robust Offline-First Architecture</h2>
+                <h2 className="text-3xl font-bold tracking-tight mb-6">{t.deepDiveTask.title}</h2>
                 <div className={`space-y-6 leading-relaxed transition-colors ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
                   <p>
-                    Built for the specific connectivity challenges of institutions, this task manager ensures zero data loss through a sophisticated hybrid sync engine.
+                    {t.deepDiveTask.desc}
                   </p>
                   <div className="space-y-4">
-                    <div className="flex gap-4">
-                      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>01</div>
-                      <div>
-                        <h4 className={`font-bold text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Conflict-Safe Cloud Merge</h4>
-                        <p className="text-xs mt-1">An action-aware "dirty task map" tracks pending changes per task ID, ensuring local edits always win during cloud pulls.</p>
+                    {t.deepDiveTask.points.map((point, pIdx) => (
+                      <div key={pIdx} className="flex gap-4">
+                        <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>{String(pIdx + 1).padStart(2, '0')}</div>
+                        <div>
+                          <h4 className={`font-bold text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>{point.title}</h4>
+                          <p className="text-xs mt-1">{point.desc}</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>02</div>
-                      <div>
-                        <h4 className={`font-bold text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Incremental UPSERT Logic</h4>
-                        <p className="text-xs mt-1">Uses SQLite WAL mode and true UPSERT logic to handle database updates efficiently without blocking the UI thread.</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors ${isDark ? 'bg-zinc-50 text-zinc-950' : 'bg-zinc-900 text-white'}`}>03</div>
-                      <div>
-                        <h4 className={`font-bold text-sm ${isDark ? 'text-zinc-50' : 'text-zinc-900'}`}>Thread-Safe Background Ops</h4>
-                        <p className="text-xs mt-1">Background cloud sync runs on Qt's thread pool with RLock protection, keeping the user interface fluid and responsive.</p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -608,20 +656,20 @@ export default function App() {
           <div className="max-w-5xl mx-auto relative z-10">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold tracking-tight mb-8">Beyond the Screen.</h2>
+                <h2 className="text-4xl font-bold tracking-tight mb-8">{t.aboutSection.title}</h2>
                 <div className={`space-y-6 leading-relaxed transition-colors ${isDark ? 'text-zinc-400' : 'text-zinc-400'}`}>
                   <p>
-                    I believe that technology should be as harmonious as music. When I'm not optimizing Bengali grammar algorithms or repairing hardware, you'll find me immersed in melodies.
+                    {t.aboutSection.desc1}
                   </p>
                   <p>
-                    As a singer and musician, I bring a unique rhythmic perspective to my development work—focusing on flow, structure, and the human experience behind every interface.
+                    {t.aboutSection.desc2}
                   </p>
                   <div className="flex items-center gap-4 pt-4">
                     <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-white text-sm">
-                      <Music className="w-4 h-4" /> Musician
+                      <Music className="w-4 h-4" /> {t.aboutSection.musician}
                     </div>
                     <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-white text-sm">
-                      <CheckCircle2 className="w-4 h-4" /> Problem Solver
+                      <CheckCircle2 className="w-4 h-4" /> {t.aboutSection.problemSolver}
                     </div>
                   </div>
                 </div>
@@ -631,7 +679,7 @@ export default function App() {
                   <div className="w-24 h-24 bg-zinc-700 rounded-full mx-auto mb-6 flex items-center justify-center">
                     <Music className="w-10 h-10 text-zinc-400" />
                   </div>
-                  <p className="text-zinc-500 italic">"Code is logic, Music is soul."</p>
+                  <p className="text-zinc-500 italic">"{t.aboutSection.quote}"</p>
                 </div>
               </div>
             </div>
@@ -643,8 +691,8 @@ export default function App() {
         {/* Contact Section */}
         <section id="contact" className="py-24 px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl font-bold tracking-tight mb-6">Let's build something meaningful.</h2>
-            <p className={`mb-12 max-w-md mx-auto transition-colors ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>Available for software collaborations, hardware consultancy, or just a chat about tech and music.</p>
+            <h2 className="text-4xl font-bold tracking-tight mb-6">{t.contactSection.title}</h2>
+            <p className={`mb-12 max-w-md mx-auto transition-colors ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>{t.contactSection.desc}</p>
             
             <div className="flex flex-col items-center gap-8">
               <a 
@@ -655,7 +703,7 @@ export default function App() {
               </a>
               
               <div className="flex gap-6">
-                <a href="https://github.com/himadribiswas" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full border transition-all ${isDark ? 'border-zinc-800 hover:bg-zinc-900' : 'border-zinc-100 hover:bg-zinc-50'}`} aria-label="GitHub">
+                <a href="https://github.com/himadri-portfolio" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full border transition-all ${isDark ? 'border-zinc-800 hover:bg-zinc-900' : 'border-zinc-100 hover:bg-zinc-50'}`} aria-label="GitHub">
                   <Github className="w-6 h-6" />
                 </a>
                 <a href="https://linkedin.com/in/himadribiswas" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full border transition-all ${isDark ? 'border-zinc-800 hover:bg-zinc-900' : 'border-zinc-100 hover:bg-zinc-50'}`} aria-label="LinkedIn">
