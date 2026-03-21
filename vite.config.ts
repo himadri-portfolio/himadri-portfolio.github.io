@@ -20,6 +20,14 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          bn: path.resolve(__dirname, 'bn.html')
+        }
+      }
+    },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
