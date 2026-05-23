@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # ম্যানুয়াল ট্রিগার - Actions ট্যাব থেকে যেকোনো সময় চালান
 
 # Give the GITHUB_TOKEN the rights needed to push
 permissions:
